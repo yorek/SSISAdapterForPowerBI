@@ -1,0 +1,2067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Namespaces>
+  <Namespace Name="Microsoft.SqlServer.Dts.Pipeline.Wrapper">
+   <Messages>
+    <Message Id="Dts" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dts' in namespace name 'Microsoft.SqlServer.Dts.Pipeline.Wrapper'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Microsoft.SqlServer.Dts.Runtime.Wrapper">
+   <Messages>
+    <Message Id="Dts" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dts' in namespace name 'Microsoft.SqlServer.Dts.Runtime.Wrapper'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters\PowerBIAdaptersOnline.dll">
+   <Modules>
+    <Module Name="powerbiadaptersonline.dll">
+     <Namespaces>
+      <Namespace Name="Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline">
+       <Types>
+        <Type Name="FieldValue" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="type" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'type' in member name 'FieldValue.type' by changing it to 'Type'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#value" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="value" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'value' in member name 'FieldValue.value' by changing it to 'Value'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="JavaScriptConverter`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Deserialize(System.Collections.Generic.IDictionary`2&lt;System.String,System.Object&gt;,System.Type,System.Web.Script.Serialization.JavaScriptSerializer)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="278">In externally visible method 'JavaScriptConverter&lt;T&gt;.Deserialize(IDictionary&lt;string, object&gt;, Type, JavaScriptSerializer)', validate parameter 'dictionary' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSerializer()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareStaticMembersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1000" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="323">Remove 'JavaScriptConverter&lt;T&gt;.GetSerializer()' from 'JavaScriptConverter&lt;T&gt;' or make it an instance member.</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="323">Change 'JavaScriptConverter&lt;T&gt;.GetSerializer()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Serialize(System.Object,System.Web.Script.Serialization.JavaScriptSerializer)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="powerBIJson" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="316">'JavaScriptConverter&lt;T&gt;.Serialize(object, JavaScriptSerializer)' declares a variable, 'powerBIJson', of type 'StringBuilder', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="JSONBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="JSON" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'JSON' in type name 'JSONBuilder' by changing it to 'Json'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ConvertSqlType(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="160">'JSONBuilder.ConvertSqlType(string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Datasets(System.Collections.Generic.List`1&lt;System.Object&gt;,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Datasets" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="153">The discrete term 'Datasets' in member name 'JSONBuilder.Datasets(this List&lt;object&gt;, string)' should be expressed as a compound word, 'DataSets'.</Issue>
+            </Message>
+            <Message Id="datasets" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="153">In member 'JSONBuilder.Datasets(this List&lt;object&gt;, string)', the discrete term 'datasets' in parameter name 'datasets' should be expressed as a compound word, 'dataSets'.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="153">Change 'List&lt;object&gt;' in 'JSONBuilder.Datasets(this List&lt;object&gt;, string)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="153">Consider a design where 'JSONBuilder.Datasets(this List&lt;object&gt;, string)' doesn't nest generic type 'IEnumerable&lt;Dictionary&lt;string, object&gt;&gt;'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="154">Change either member or parameter name 'datasets' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#JsonFromDataReader(System.Data.IDataReader)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="40">In externally visible method 'JSONBuilder.JsonFromDataReader(IDataReader)', validate parameter 'reader' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToJson(System.Object,System.Web.Script.Serialization.JavaScriptSerializer)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="obj" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="16">In member 'JSONBuilder.ToJson(this object, JavaScriptSerializer)', consider replacing the data type identifier 'obj' in parameter name 'obj' with a more generic term, such as 'value'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="20">In externally visible method 'JSONBuilder.ToJson(this object, JavaScriptSerializer)', validate parameter 'serializer' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToJsonSchema(System.Data.DataTable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="typeName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="195">'JSONBuilder.ToJsonSchema(this DataTable)' declares a variable, 'typeName', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="197">In externally visible method 'JSONBuilder.ToJsonSchema(this DataTable)', validate parameter 'dataTable' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToJsonSchema(System.Object,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="107">'JSONBuilder.ToJsonSchema(this object, string)' creates an exception of type 'Exception', an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+            <Message Id="obj" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="68">In member 'JSONBuilder.ToJsonSchema(this object, string)', consider replacing the data type identifier 'obj' in parameter name 'obj' with a more generic term, such as 'value'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="73">In externally visible method 'JSONBuilder.ToJsonSchema(this object, string)', validate parameter 'obj' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToObject`1(System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="141">Replace method 'JSONBuilder.ToObject&lt;T&gt;(this string, int)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="JSONBuilder.cs" Line="145">In externally visible method 'JSONBuilder.ToObject&lt;T&gt;(this string, int)', validate parameter 'obj' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Product" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ProductID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'Product.ProductID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SharePointListDestination" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AccessToken()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="884">Replace the call to 'string.operator ==(string, string)' in 'SharePointListDestination.AccessToken()' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddClassRows(System.Collections.Generic.List`1&lt;System.Collections.Generic.Dictionary`2&lt;System.String,Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline.FieldValue&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="835">Modify 'SharePointListDestination.AddClassRows(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDataset(System.Collections.Generic.List`1&lt;System.Collections.Generic.Dictionary`2&lt;System.String,Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline.FieldValue&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="752">Modify 'SharePointListDestination.CreateDataset(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="ex" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="752">'SharePointListDestination.CreateDataset(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' declares a variable, 'ex', of type 'Exception', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateExternalMetaDataColumns(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100,System.Collections.Generic.Dictionary`2&lt;System.String,System.String&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="425">The 'this' parameter (or 'Me' in Visual Basic) of 'SharePointListDestination.CreateExternalMetaDataColumns(IDTSInput100, Dictionary&lt;string, string&gt;)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="existingColumnData" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="425">Parameter 'existingColumnData' of 'SharePointListDestination.CreateExternalMetaDataColumns(IDTSInput100, Dictionary&lt;string, string&gt;)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateNewDataSet(System.Collections.Generic.List`1&lt;System.Collections.Generic.Dictionary`2&lt;System.String,Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline.FieldValue&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="typeName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="797">'SharePointListDestination.CreateNewDataSet(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' declares a variable, 'typeName', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#createRows(System.Collections.Generic.List`1&lt;System.Collections.Generic.Dictionary`2&lt;System.String,Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline.FieldValue&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="759">The 'this' parameter (or 'Me' in Visual Basic) of 'SharePointListDestination.createRows(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="typeName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="762">'SharePointListDestination.createRows(List&lt;Dictionary&lt;string, FieldValue&gt;&gt;)' declares a variable, 'typeName', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DatasetRequest(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="936">The 'this' parameter (or 'Me' in Visual Basic) of 'SharePointListDestination.DatasetRequest(string, string, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAllDatasets()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="924">Modify 'SharePointListDestination.GetAllDatasets()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="ex" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="924">'SharePointListDestination.GetAllDatasets()' declares a variable, 'ex', of type 'Exception', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ProcessInput(System.Int32,Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="batchSize" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="527">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'batchSize', of type 'short', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="batchType" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="528">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'batchType', of type 'BatchType', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="resultData" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="523">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'resultData', of type 'XElement', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="sharepointList" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="525">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'sharepointList', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="sharepointListView" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="526">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'sharepointListView', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="sharepointUrl" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="524">'SharePointListDestination.ProcessInput(int, PipelineBuffer)' declares a variable, 'sharepointUrl', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="530">In externally visible method 'SharePointListDestination.ProcessInput(int, PipelineBuffer)', validate parameter 'buffer' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Validate()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="196">'SharePointListDestination.Validate()' has a cyclomatic complexity of 60. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ValidateSharePointColumns()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="306">The 'this' parameter (or 'Me' in Visual Basic) of 'SharePointListDestination.ValidateSharePointColumns()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="canCancel" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Users\nicksav\Documents\Visual Studio 2012\Projects\PowerBISSISAdapter\SQL2012\SharePointListAdapters" File="SharePointListDestination.cs" Line="306">'SharePointListDestination.ValidateSharePointColumns()' declares a variable, 'canCancel', of type 'bool', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Microsoft.SqlServer.Dts.Pipeline.Wrapper">
+       <Types>
+        <Type Name="DTSCustomPropertyExpressionType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'DTSCustomPropertyExpressionType' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CPET_NONE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CPET" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CPET' in member name 'DTSCustomPropertyExpressionType.CPET_NONE' by changing it to 'Cpet'.</Issue>
+            </Message>
+            <Message Id="NONE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NONE' in member name 'DTSCustomPropertyExpressionType.CPET_NONE' by changing it to 'None'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSCustomPropertyExpressionType.CPET_NONE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CPET_NOTIFY" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CPET" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CPET' in member name 'DTSCustomPropertyExpressionType.CPET_NOTIFY' by changing it to 'Cpet'.</Issue>
+            </Message>
+            <Message Id="NOTIFY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NOTIFY' in member name 'DTSCustomPropertyExpressionType.CPET_NOTIFY' by changing it to 'Notify'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSCustomPropertyExpressionType.CPET_NOTIFY'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DTSUsageType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'DTSUsageType' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#UT_IGNORED" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="IGNORED" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'IGNORED' in member name 'DTSUsageType.UT_IGNORED' by changing it to 'Ignored'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSUsageType.UT_IGNORED'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UT_READONLY" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="READONLY" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'READONLY' in member name 'DTSUsageType.UT_READONLY' should be expressed as a compound word, 'ReadOnly'.</Issue>
+            </Message>
+            <Message Id="READONLY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'READONLY' in member name 'DTSUsageType.UT_READONLY' by changing it to 'Readonly'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSUsageType.UT_READONLY'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UT_READWRITE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="READWRITE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'READWRITE' in member name 'DTSUsageType.UT_READWRITE' by changing it to 'Readwrite'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSUsageType.UT_READWRITE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DTSValidationStatus" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'DTSValidationStatus' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#VS_ISBROKEN" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ISBROKEN" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ISBROKEN' in member name 'DTSValidationStatus.VS_ISBROKEN' by changing it to 'Isbroken'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSValidationStatus.VS_ISBROKEN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VS_ISCORRUPT" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ISCORRUPT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ISCORRUPT' in member name 'DTSValidationStatus.VS_ISCORRUPT' by changing it to 'Iscorrupt'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSValidationStatus.VS_ISCORRUPT'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VS_ISVALID" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ISVALID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ISVALID' in member name 'DTSValidationStatus.VS_ISVALID' by changing it to 'Isvalid'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSValidationStatus.VS_ISVALID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VS_NEEDSNEWMETADATA" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="NEEDSNEWMETADATA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NEEDSNEWMETADATA' in member name 'DTSValidationStatus.VS_NEEDSNEWMETADATA' by changing it to 'Needsnewmetadata'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DTSValidationStatus.VS_NEEDSNEWMETADATA'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSBufferManager100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSBufferManager100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_5()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSBufferManager100._VtblGap1_5()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FindColumnByLineageID(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSBufferManager100.FindColumnByLineageID(int, int)' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+             <Issue Name="MemberParameterAbbreviation" Certainty="85" Level="Error">In member 'IDTSBufferManager100.FindColumnByLineageID(int, int)', correct the casing of 'ID' in parameter name 'nLineageID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message Id="h" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDTSBufferManager100.FindColumnByLineageID(int, int)', correct the spelling of 'h' in parameter name 'hBufferType' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="n" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDTSBufferManager100.FindColumnByLineageID(int, int)', correct the spelling of 'n' in parameter name 'nLineageID' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSComponentMetaData100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="MetaData" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'MetaData' in type name 'IDTSComponentMetaData100' exists as a discrete term. If your usage is intended to be single word, case it as 'Metadata'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSComponentMetaData100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_4()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSComponentMetaData100._VtblGap1_4()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_4()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSComponentMetaData100._VtblGap2_4()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap3_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSComponentMetaData100._VtblGap3_1()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap4_4()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSComponentMetaData100._VtblGap4_4()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap5_11()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSComponentMetaData100._VtblGap5_11()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FireError(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="5#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'pbCancel' be an out parameter.</Issue>
+            </Message>
+            <Message Id="SubComponent" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeDiscreteTerm" Certainty="80" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', the compound word 'SubComponent' in parameter name 'SubComponent' exists as a discrete term. If your usage is intended to be single word, case it as 'Subcomponent' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Description" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the casing of 'Description' in parameter name 'Description' by changing it to 'description'.</Issue>
+            </Message>
+            <Message Id="Error" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the casing of 'Error' in parameter name 'ErrorCode' by changing it to 'error'.</Issue>
+            </Message>
+            <Message Id="Help" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the casing of 'Help' in parameter name 'HelpContext' by changing it to 'help'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the casing of 'Help' in parameter name 'HelpFile' by changing it to 'help'.</Issue>
+            </Message>
+            <Message Id="Sub" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the casing of 'Sub' in parameter name 'SubComponent' by changing it to 'sub'.</Issue>
+            </Message>
+            <Message Id="pb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)', correct the spelling of 'pb' in parameter name 'pbCancel' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">Consider making 'IDTSComponentMetaData100.FireError(int, string, string, string, int, out bool)' an event.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FireInformation(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="5#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Consider a design that does not require that 'pbFireAgain' be an out parameter.</Issue>
+            </Message>
+            <Message Id="SubComponent" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeDiscreteTerm" Certainty="80" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', the compound word 'SubComponent' in parameter name 'SubComponent' exists as a discrete term. If your usage is intended to be single word, case it as 'Subcomponent' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Description" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the casing of 'Description' in parameter name 'Description' by changing it to 'description'.</Issue>
+            </Message>
+            <Message Id="Help" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the casing of 'Help' in parameter name 'HelpContext' by changing it to 'help'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the casing of 'Help' in parameter name 'HelpFile' by changing it to 'help'.</Issue>
+            </Message>
+            <Message Id="Information" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the casing of 'Information' in parameter name 'InformationCode' by changing it to 'information'.</Issue>
+            </Message>
+            <Message Id="Sub" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the casing of 'Sub' in parameter name 'SubComponent' by changing it to 'sub'.</Issue>
+            </Message>
+            <Message Id="pb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)', correct the spelling of 'pb' in parameter name 'pbFireAgain' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">Consider making 'IDTSComponentMetaData100.FireInformation(int, string, string, string, int, ref bool)' an event.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSCustomProperty100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSCustomProperty100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSCustomProperty100._VtblGap1_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSCustomProperty100._VtblGap2_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap3_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSCustomProperty100._VtblGap3_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap4_4()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSCustomProperty100._VtblGap4_4()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSCustomPropertyCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSCustomPropertyCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSCustomPropertyCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSCustomPropertyCollection100._VtblGap1_1()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Item[System.Object]" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Index" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSCustomPropertyCollection100.this[object]', correct the casing of 'Index' in parameter name 'Index' by changing it to 'index'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#New()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="New" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IDTSCustomPropertyCollection100.New()' so that it no longer conflicts with the reserved language keyword 'New'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSDesigntimeComponent100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSDesigntimeComponent100'.</Issue>
+          </Message>
+          <Message Id="Designtime" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'Designtime' in type name 'IDTSDesigntimeComponent100' should be expressed as a compound word, 'DesignTime'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSDesigntimeComponent100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSExternalMetadataColumn100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSExternalMetadataColumn100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSExternalMetadataColumn100._VtblGap1_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_4()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSExternalMetadataColumn100._VtblGap2_4()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSExternalMetadataColumn100.ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSExternalMetadataColumnCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSExternalMetadataColumnCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSExternalMetadataColumnCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_3()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSExternalMetadataColumnCollection100._VtblGap1_3()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_3()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSExternalMetadataColumnCollection100._VtblGap2_3()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap3_5()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSExternalMetadataColumnCollection100._VtblGap3_5()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#New()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="New" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IDTSExternalMetadataColumnCollection100.New()' so that it no longer conflicts with the reserved language keyword 'New'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSInput100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSInput100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInput100._VtblGap1_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInput100._VtblGap2_1()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap3_11()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInput100._VtblGap3_11()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetVirtualInput()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IDTSInput100.GetVirtualInput()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSInput100.ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSInputCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSInputCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSInputCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputCollection100._VtblGap1_1()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_5()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputCollection100._VtblGap2_5()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetObjectByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSInputCollection100.GetObjectByID(int)' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+             <Issue Name="MemberParameterAbbreviation" Certainty="85" Level="Error">In member 'IDTSInputCollection100.GetObjectByID(int)', correct the casing of 'ID' in parameter name 'lID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message Id="l" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'IDTSInputCollection100.GetObjectByID(int)', correct the spelling of 'l' in parameter name 'lID' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Item[System.Object]" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Index" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error">In member 'IDTSInputCollection100.this[object]', correct the casing of 'Index' in parameter name 'Index' by changing it to 'index'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#New()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="New" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IDTSInputCollection100.New()' so that it no longer conflicts with the reserved language keyword 'New'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSInputColumn100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSInputColumn100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputColumn100._VtblGap1_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap2_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputColumn100._VtblGap2_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap3_6()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputColumn100._VtblGap3_6()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#_VtblGap4_13()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputColumn100._VtblGap4_13()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExternalMetadataColumnID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSInputColumn100.ExternalMetadataColumnID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LineageID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSInputColumn100.LineageID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSInputColumnCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSInputColumnCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSInputColumnCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_7()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSInputColumnCollection100._VtblGap1_7()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSObject100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSObject100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSObject100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSObjectModel100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSObjectModel100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSObjectModel100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSOutputCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSOutputCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSOutputCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSOutputCollection100._VtblGap1_2()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSPipeline100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSPipeline100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSPipeline100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSVirtualInput100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVirtualInput100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_8()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSVirtualInput100._VtblGap1_8()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSVirtualInputColumn100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVirtualInputColumn100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_13()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSVirtualInputColumn100._VtblGap1_13()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LineageID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDTSVirtualInputColumn100.LineageID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSVirtualInputColumnCollection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVirtualInputColumnCollection100' by changing it to 'Dts'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">Rename 'IDTSVirtualInputColumnCollection100' to end in 'Collection'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_VtblGap1_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning">The 'this' parameter (or 'Me' in Visual Basic) of 'IDTSVirtualInputColumnCollection100._VtblGap1_1()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Microsoft.SqlServer.Dts.Runtime.Wrapper">
+       <Types>
+        <Type Name="DataType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DT_BOOL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BOOL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BOOL' in member name 'DataType.DT_BOOL' by changing it to 'Bool'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BOOL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_BOOL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BOOL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BOOL' in member name 'DataType.DT_BYREF_BOOL' by changing it to 'Bool'.</Issue>
+            </Message>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_BOOL' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_BOOL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_CY" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_CY' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_CY'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DATE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DATE' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DATE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DATE' in member name 'DataType.DT_BYREF_DATE' by changing it to 'Date'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DATE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBDATE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBDATE' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBDATE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBDATE' in member name 'DataType.DT_BYREF_DBDATE' by changing it to 'Dbdate'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBDATE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBTIME" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBTIME' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBTIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIME' in member name 'DataType.DT_BYREF_DBTIME' by changing it to 'Dbtime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBTIME'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBTIME2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBTIME2' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBTIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIME' in member name 'DataType.DT_BYREF_DBTIME2' by changing it to 'Dbtime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBTIME2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBTIMESTAMP" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBTIMESTAMP' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBTIMESTAMP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMP' in member name 'DataType.DT_BYREF_DBTIMESTAMP' by changing it to 'Dbtimestamp'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBTIMESTAMP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBTIMESTAMP2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBTIMESTAMP2' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBTIMESTAMP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMP' in member name 'DataType.DT_BYREF_DBTIMESTAMP2' by changing it to 'Dbtimestamp'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBTIMESTAMP2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DBTIMESTAMPOFFSET" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DBTIMESTAMPOFFSET' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DBTIMESTAMPOFFSET" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMPOFFSET' in member name 'DataType.DT_BYREF_DBTIMESTAMPOFFSET' by changing it to 'Dbtimestampoffset'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DBTIMESTAMPOFFSET'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_DECIMAL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_DECIMAL' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="DECIMAL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DECIMAL' in member name 'DataType.DT_BYREF_DECIMAL' by changing it to 'Decimal'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_DECIMAL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_FILETIME" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_FILETIME' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="FILETIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILETIME' in member name 'DataType.DT_BYREF_FILETIME' by changing it to 'Filetime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_FILETIME'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_GUID" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_GUID' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="GUID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'GUID' in member name 'DataType.DT_BYREF_GUID' by changing it to 'Guid'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_GUID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_I1" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_I1' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_I1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_I2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_I2' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_I2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_I4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_I4' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_I4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_I8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_I8' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_I8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_NUMERIC" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_NUMERIC' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message Id="NUMERIC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NUMERIC' in member name 'DataType.DT_BYREF_NUMERIC' by changing it to 'Numeric'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_NUMERIC'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_R4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_R4' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_R4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_R8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_R8' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_R8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_UI1" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_UI1' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_UI1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_UI2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_UI2' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_UI2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_UI4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_UI4' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_UI4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYREF_UI8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYREF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYREF' in member name 'DataType.DT_BYREF_UI8' by changing it to 'Byref'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYREF_UI8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_BYTES" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="BYTES" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'BYTES' in member name 'DataType.DT_BYTES' by changing it to 'Bytes'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_BYTES'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_CY" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_CY'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DATE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DATE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DATE' in member name 'DataType.DT_DATE' by changing it to 'Date'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DATE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBDATE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBDATE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBDATE' in member name 'DataType.DT_DBDATE' by changing it to 'Dbdate'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBDATE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBTIME" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBTIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIME' in member name 'DataType.DT_DBTIME' by changing it to 'Dbtime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBTIME'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBTIME2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBTIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIME' in member name 'DataType.DT_DBTIME2' by changing it to 'Dbtime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBTIME2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBTIMESTAMP" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBTIMESTAMP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMP' in member name 'DataType.DT_DBTIMESTAMP' by changing it to 'Dbtimestamp'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBTIMESTAMP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBTIMESTAMP2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBTIMESTAMP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMP' in member name 'DataType.DT_DBTIMESTAMP2' by changing it to 'Dbtimestamp'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBTIMESTAMP2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DBTIMESTAMPOFFSET" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DBTIMESTAMPOFFSET" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DBTIMESTAMPOFFSET' in member name 'DataType.DT_DBTIMESTAMPOFFSET' by changing it to 'Dbtimestampoffset'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DBTIMESTAMPOFFSET'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_DECIMAL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DECIMAL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DECIMAL' in member name 'DataType.DT_DECIMAL' by changing it to 'Decimal'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_DECIMAL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_EMPTY" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EMPTY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'EMPTY' in member name 'DataType.DT_EMPTY' by changing it to 'Empty'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_EMPTY'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_FILETIME" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="FILETIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILETIME' in member name 'DataType.DT_FILETIME' by changing it to 'Filetime'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_FILETIME'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_GUID" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GUID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'GUID' in member name 'DataType.DT_GUID' by changing it to 'Guid'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_GUID'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_I1" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_I1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_I2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_I2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_I4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_I4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_I8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_I8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_IMAGE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="IMAGE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'IMAGE' in member name 'DataType.DT_IMAGE' by changing it to 'Image'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_IMAGE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_NTEXT" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="NTEXT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NTEXT' in member name 'DataType.DT_NTEXT' by changing it to 'Ntext'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_NTEXT'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_NULL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="NULL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NULL' in member name 'DataType.DT_NULL' by changing it to 'Null'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_NULL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_NUMERIC" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="NUMERIC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'NUMERIC' in member name 'DataType.DT_NUMERIC' by changing it to 'Numeric'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_NUMERIC'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_R4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_R4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_R8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_R8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_STR" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="STR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'STR' in member name 'DataType.DT_STR' by changing it to 'Str'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_STR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_TEXT" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="TEXT" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'TEXT' in member name 'DataType.DT_TEXT' by changing it to 'Text'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_TEXT'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_UI1" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_UI1'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_UI2" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_UI2'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_UI4" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_UI4'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_UI8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_UI8'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DT_WSTR" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="WSTR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'WSTR' in member name 'DataType.DT_WSTR' by changing it to 'Wstr'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DataType.DT_WSTR'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDTSApplication100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSApplication100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSApplication100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSConnectionManager100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSConnectionManager100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSConnectionManager100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSContainer100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSContainer100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSContainer100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSEventHandler100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSEventHandler100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSEventHandler100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSExecutable100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSExecutable100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSExecutable100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSExpressionEvaluator100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSExpressionEvaluator100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSExpressionEvaluator100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSForEachItemEnumerator100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSForEachItemEnumerator100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSForEachItemEnumerator100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSFtpClientConnection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSFtpClientConnection100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSFtpClientConnection100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSHttpClientConnection100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSHttpClientConnection100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSHttpClientConnection100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSInfoEvents100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSInfoEvents100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSInfoEvents100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSLogProvider100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSLogProvider100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSLogProvider100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSName100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSName100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSName100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSObjectHost100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSObjectHost100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSObjectHost100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSPackage100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSPackage100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSPackage100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSParameter100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSParameter100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSParameter100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSPrecedenceConstraint100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSPrecedenceConstraint100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSPrecedenceConstraint100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSProjectConnectionsCreator100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSProjectConnectionsCreator100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSProjectConnectionsCreator100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSSuspend100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSSuspend100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSSuspend100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSTask100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSTask100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSTask100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSTaskCreator100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSTaskCreator100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSTaskCreator100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSVariable100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSVariable100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVariable100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSVariableCreator100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSVariableCreator100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVariableCreator100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDTSVariableDispenser100" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'IDTSVariableDispenser100'.</Issue>
+          </Message>
+          <Message Id="DTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DTS' in type name 'IDTSVariableDispenser100' by changing it to 'Dts'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ISequentialStream" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Warning">Define a custom attribute to replace 'ISequentialStream'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Active" Created="2015-04-16 04:14:31Z" FixCategory="Breaking">
+           <Issue Name="TypeNoAlternate" Certainty="95" Level="CriticalError">Rename type name 'ISequentialStream' so that it does not end in 'Stream'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidEmptyInterfaces" Category="Microsoft.Design" CheckId="CA1040">
+   <Name>Avoid empty interfaces</Name>
+   <Description>Interfaces are meant to contain members that specify a set of behaviors. To mark or label a class, use an attribute instead of an empty interface.</Description>
+   <Resolution Name="Default">Define a custom attribute to replace {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182128(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Avoid excessive complexity</Name>
+   <Description>Method implementations that are exceedingly complex increase the challenge of understanding and maintaining code.</Description>
+   <Resolution Name="Default">{0} has a cyclomatic complexity of {1}. Rewrite or refactor the method to reduce complexity to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+   <Name>Avoid out parameters</Name>
+   <Description>Using out parameters might indicate a design flaw. Although there are legitimate times to use out parameters, their use frequently indicates a design that does not conform to the design guidelines for managed code.</Description>
+   <Resolution Name="Default">Consider a design that does not require that {0} be an out parameter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182131(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberParameterShouldBeCompoundWord">In member {0}, the discrete term '{1}' in parameter name {2} should be expressed as a compound word, '{3}'.</Resolution>
+   <Resolution Name="MemberParameterShouldBeDiscreteTerm">In member {0}, the compound word '{1}' in parameter name {2} exists as a discrete term. If your usage is intended to be single word, case it as '{3}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="TypeShouldBeCompoundWord">The discrete term '{0}' in type name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+   <Name>Default parameters should not be used</Name>
+   <Description>Some programming languages do not support default parameters. Replace default parameters with method overloads that supply the default argument.</Description>
+   <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182135(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareStaticMembersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1000">
+   <Name>Do not declare static members on generic types</Name>
+   <Description>The syntax for calling static members on generic types is complex as the type parameter has to be specified for each call.</Description>
+   <Resolution Name="Default">Remove {0} from {1} or make it an instance member.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182139(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+   <Name>Do not nest generic types in member signatures</Name>
+   <Description>Avoid API that require users to instantiate a generic type with another generic type as type argument. The syntax gets too complex.</Description>
+   <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182144(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+   <Name>Do not raise reserved exception types</Name>
+   <Description>User code should not create and raise exceptions of certain types that are reserved by the runtime or which are of a too general exception type. Exception types that are too general include Exception, SystemException, and ApplicationException. Exception types that are reserved by the runtime include ThreadAbortException, OutOfMemoryException, ExecutionEngineException, and IndexOutOfRangeException.</Description>
+   <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182338(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberAbbreviation">Correct the casing of '{0}' in member name {1} by changing it to '{2}'. '{2}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+   <Resolution Name="MemberParameterAbbreviation">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'. '{3}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldHaveCorrectSuffix" Category="Microsoft.Naming" CheckId="CA1710">
+   <Name>Identifiers should have correct suffix</Name>
+   <Description>Types that extend certain base types have specified name suffixes. Types that extend Attribute, for example, should be suffixed in 'Attribute', as in ObsoleteAttribute. This rules checks types that extend several base types, including Attribute, Exception, EventArgs, IMembershipPermission, Stream, and others.</Description>
+   <Resolution Name="Default">Rename {0} to end in '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182244(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720">
+   <Name>Identifiers should not contain type names</Name>
+   <Description>Avoid using language-specific types name in parameters and members and data type identifiers in parameters. Types names might not be intuitive for all developers. It is recommended that you select a generic name, such as 'value', instead. If this is not sufficient, be sure to use the type name as it is defined in the .NET Framework Library and avoid language-specific type names completely. Some examples of C#-specific type names are 'float' (use 'Single' if a generic name is not sufficient), and 'ulong' (use 'UInt64' if a generic name is not sufficient).</Description>
+   <Resolution Name="LanguageIndependentMemberParameter">In member {0}, consider replacing the data type identifier '{1}' in parameter name {2} with a more generic term, such as 'value'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb531486(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+   <Name>Identifiers should not have incorrect suffix</Name>
+   <Description>Types that do not extend certain base types should not use reserved name suffixes. Types and members should not use 'Ex' or 'New' to distinguish them from an earlier version of the same API, instead, use a numeric suffix such as '2' or provide a more meaningful suffix. Concrete type implementations and members should not end 'Impl'. Members instead, should either consider using the suggested alternate 'Core' in replacement of 'Impl' or avoid any suffix at all.</Description>
+   <Resolution Name="TypeNoAlternate">Rename type name {0} so that it does not end in '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182247(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+   <Name>Identifiers should not match keywords</Name>
+   <Description>Identifiers which conflict with reserved language keywords should be avoided. Using a reserved keyword as an identifier makes it harder for consumers in other languages to use your API.</Description>
+   <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182248(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719">
+   <Name>Parameter names should not match member names</Name>
+   <Description>Parameter names should be distinct from member names.</Description>
+   <Resolution Name="Default">Change either member or parameter name {0} so that one differs from the other.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182252(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseEventsWhereAppropriate" Category="Microsoft.Design" CheckId="CA1030">
+   <Name>Use events where appropriate</Name>
+   <Description>A method name suggestive of event functionality was encountered.</Description>
+   <Resolution Name="Default">Consider making {0} an event.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182177(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
