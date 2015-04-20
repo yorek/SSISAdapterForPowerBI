@@ -28,10 +28,5 @@
 		</TaggedOutputs> -->
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="..\..\PowerBIConnectionManager\PowerBIConnectionManager.csproj">
-			<Name>PowerBIConnectionManager</Name>
-			<Project>{149C1402-DDDB-4F84-A41B-54D771382AB6}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

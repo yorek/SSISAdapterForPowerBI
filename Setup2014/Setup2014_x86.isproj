@@ -28,14 +28,5 @@
 		</TaggedOutputs> -->
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="..\PowerBIAdapter2014\PowerBIAdapter2014.csproj">
-			<Name>PowerBIAdapter2014</Name>
-			<Project>{FCE864A7-7B0C-48A5-9F79-F92AF2402082}</Project>
-		</ProjectReference>
-		<ProjectReference Include="..\PowerBIConnectionManager\PowerBIConnectionManager.csproj">
-			<Name>PowerBIConnectionManager</Name>
-			<Project>{149C1402-DDDB-4F84-A41B-54D771382AB6}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

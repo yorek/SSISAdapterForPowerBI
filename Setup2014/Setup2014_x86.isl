@@ -348,10 +348,10 @@
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{79BD554B-C8D0-477D-96BC-25788B649005}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td>{37ABDA6B-AB05-42DF-8FE6-8379AC1B6F41}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>microsoft.identitymodel.clie1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td>{70675220-7A16-4A75-8901-54B654C6AFBC}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>microsoft.identitymodel.clie</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIAdapter2014.Primary_output</td><td>{53094C2F-70DE-4C39-8D05-AA264FA09471}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiadapter2014.primary_o</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIAdapter2014.Primary_output1</td><td>{BECAAF54-244E-45F8-9C49-E53B553BE3CD}</td><td>PIPELINECOMPONENTS</td><td>2</td><td/><td>powerbiadapter2014.primary_o1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIConnectionManager.Primary_output</td><td>{2C87B5EC-1337-482F-95A1-1528520E03BF}</td><td>CONNECTIONS</td><td>2</td><td/><td>powerbiconnectionmanager.pri</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIConnectionManager.Primary_output1</td><td>{A392EFD4-7835-4003-A2F1-795C624CF293}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiconnectionmanager.pri1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIAdaptersOnline.dll</td><td>{CBE36E70-0527-47C0-BB41-F760715E299D}</td><td>PIPELINECOMPONENTS</td><td>2</td><td/><td>powerbiadaptersonline.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIAdaptersOnline.dll1</td><td>{A571F781-1E60-4C38-BD40-145F78E58674}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiadaptersonline.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIConnectionManager.dll</td><td>{F57E43AA-4EE0-455F-AF99-7F286CC54728}</td><td>CONNECTIONS</td><td>2</td><td/><td>powerbiconnectionmanager.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIConnectionManager.dll1</td><td>{2CCC8FA6-6BA7-4486-AD74-782614E8B811}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiconnectionmanager.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1891,10 +1891,10 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
 		<row><td>AlwaysInstall</td><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td></row>
 		<row><td>AlwaysInstall</td><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td></row>
-		<row><td>AlwaysInstall</td><td>PowerBIAdapter2014.Primary_output</td></row>
-		<row><td>AlwaysInstall</td><td>PowerBIAdapter2014.Primary_output1</td></row>
-		<row><td>AlwaysInstall</td><td>PowerBIConnectionManager.Primary_output</td></row>
-		<row><td>AlwaysInstall</td><td>PowerBIConnectionManager.Primary_output1</td></row>
+		<row><td>AlwaysInstall</td><td>PowerBIAdaptersOnline.dll</td></row>
+		<row><td>AlwaysInstall</td><td>PowerBIAdaptersOnline.dll1</td></row>
+		<row><td>AlwaysInstall</td><td>PowerBIConnectionManager.dll</td></row>
+		<row><td>AlwaysInstall</td><td>PowerBIConnectionManager.dll1</td></row>
 	</table>
 
 	<table name="File">
@@ -1911,10 +1911,10 @@
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>microsoft.identitymodel.clie</td><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td>MICROS~1.DLL|Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIAdapter2014\RefFiles\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td>1</td><td/></row>
 		<row><td>microsoft.identitymodel.clie1</td><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td>MICROS~1.DLL|Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIAdapter2014\RefFiles\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td>1</td><td/></row>
-		<row><td>powerbiadapter2014.primary_o</td><td>PowerBIAdapter2014.Primary_output</td><td>PowerBIAdapter2014.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerBIAdapter20141&gt;|Built</td><td>3</td><td/></row>
-		<row><td>powerbiadapter2014.primary_o1</td><td>PowerBIAdapter2014.Primary_output1</td><td>PowerBIAdapter2014.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerBIAdapter20141&gt;|Built</td><td>3</td><td/></row>
-		<row><td>powerbiconnectionmanager.pri</td><td>PowerBIConnectionManager.Primary_output</td><td>PowerBIConnectionManager.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerBIConnectionManager1&gt;|Built</td><td>3</td><td/></row>
-		<row><td>powerbiconnectionmanager.pri1</td><td>PowerBIConnectionManager.Primary_output1</td><td>PowerBIConnectionManager.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerBIConnectionManager1&gt;|Built</td><td>3</td><td/></row>
+		<row><td>powerbiadaptersonline.dll</td><td>PowerBIAdaptersOnline.dll</td><td>POWERB~1.DLL|PowerBIAdaptersOnline.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIAdapter2014\bin\x86\Release\PowerBIAdaptersOnline.dll</td><td>1</td><td/></row>
+		<row><td>powerbiadaptersonline.dll1</td><td>PowerBIAdaptersOnline.dll1</td><td>POWERB~1.DLL|PowerBIAdaptersOnline.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIAdapter2014\bin\x86\Release\PowerBIAdaptersOnline.dll</td><td>1</td><td/></row>
+		<row><td>powerbiconnectionmanager.dll</td><td>PowerBIConnectionManager.dll</td><td>POWERB~1.DLL|PowerBIConnectionManager.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIConnectionManager\bin\x86\Release\PowerBIConnectionManager.dll</td><td>1</td><td/></row>
+		<row><td>powerbiconnectionmanager.dll1</td><td>PowerBIConnectionManager.dll1</td><td>POWERB~1.DLL|PowerBIConnectionManager.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\PowerBIConnectionManager\bin\x86\Release\PowerBIConnectionManager.dll</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2066,10 +2066,10 @@
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_09E34B52_4304_40C2_880B_07A6245CCA55_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td/><td/><td>_F1E51D78_B750_44A4_A7AC_9EA8158C2D45_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td/><td/><td>_61562BEE_32AA_451A_8844_5E9BB27E0DE8_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIAdapter2014.Primary_output</td><td/><td/><td>_852C67A0_8329_4860_ABE7_FFD55316416A_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIAdapter2014.Primary_output1</td><td/><td/><td>_FDCA6B14_79CA_4CCF_B7DD_7D7B803DDF3C_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIConnectionManager.Primary_output</td><td/><td/><td>_1C3B803A_2A61_4B66_B6E1_4600DF8F11A1_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIConnectionManager.Primary_output1</td><td/><td/><td>_04EAA839_38E0_4709_AE34_3A1B3D42F675_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIAdaptersOnline.dll</td><td/><td/><td>_E48A90DE_8EB1_4C1D_A199_5217B9EB0EF9_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIAdaptersOnline.dll1</td><td/><td/><td>_45D3930E_40B0_40E9_9B83_07DE786A6012_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIConnectionManager.dll</td><td/><td/><td>_D40EE806_4C90_4CAF_BCAA_4951AC0C4811_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIConnectionManager.dll1</td><td/><td/><td>_BEAFF72E_4F52_4468_88AC_57A8D8E19D55_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2691,7 +2691,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1843195296</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1574714515</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1977361482</td></row>
@@ -3794,8 +3794,8 @@
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>-1977412682</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td/><td>0</td><td/><td>-1977406538</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>http://www.IOISolutions.com</td><td>0</td><td/><td>-1843195296</td></row>
-		<row><td>ID_STRING4</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1843195296</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>http://www.IOISolutions.com</td><td>0</td><td/><td>-1574714515</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1574714515</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1977414730</td></row>
 	</table>
 
@@ -4050,6 +4050,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SccPath</td><td/></row>
 		<row><td>SchemaVersion</td><td>774</td></row>
 		<row><td>Type</td><td>MSIE</td></row>
+		<row><td>VSSccAuxPath</td><td/></row>
+		<row><td>VSSccLocalPath</td><td/></row>
+		<row><td>VSSccProvider</td><td/></row>
 	</table>
 
 	<table name="InstallUISequence">
