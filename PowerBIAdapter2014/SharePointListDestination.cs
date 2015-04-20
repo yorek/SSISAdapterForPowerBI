@@ -44,7 +44,7 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
 
         //Data Set Name
         private const string C_DATASET = "Data Set";
-        private const string C_DATATABLE = "Tabel";
+        private const string C_DATATABLE = "Table";
         private const string C_USERFIFO = "Use basic FIFO";
 
 
