@@ -33,17 +33,17 @@
             this.ResourceUriTxt = new System.Windows.Forms.TextBox();
             this.OAuthTxt = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.UserNameTxt = new System.Windows.Forms.TextBox();
-            this.PasswordTxt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PowerBIDataSetsTxt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.PasswordTxt = new System.Windows.Forms.TextBox();
+            this.UserNameTxt = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.PowerBIDataSetsTxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.OkBtn = new System.Windows.Forms.Button();
             this.TestBtn = new System.Windows.Forms.Button();
@@ -97,6 +97,40 @@
             this.groupBox1.Text = "Credentials";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Password";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Username";
+            // 
+            // PasswordTxt
+            // 
+            this.PasswordTxt.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.PasswordTxt.Location = new System.Drawing.Point(133, 45);
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.Size = new System.Drawing.Size(244, 20);
+            this.PasswordTxt.TabIndex = 2;
+            // 
+            // UserNameTxt
+            // 
+            this.UserNameTxt.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.UserNameTxt.Location = new System.Drawing.Point(133, 19);
+            this.UserNameTxt.Name = "UserNameTxt";
+            this.UserNameTxt.Size = new System.Drawing.Size(244, 20);
+            this.UserNameTxt.TabIndex = 1;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label5);
@@ -116,48 +150,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Power BI Connection Settings";
             // 
-            // UserNameTxt
+            // label5
             // 
-            this.UserNameTxt.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.UserNameTxt.Location = new System.Drawing.Point(133, 19);
-            this.UserNameTxt.Name = "UserNameTxt";
-            this.UserNameTxt.Size = new System.Drawing.Size(244, 20);
-            this.UserNameTxt.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Power BI DataSets";
             // 
-            // PasswordTxt
+            // PowerBIDataSetsTxt
             // 
-            this.PasswordTxt.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.PasswordTxt.Location = new System.Drawing.Point(133, 45);
-            this.PasswordTxt.Name = "PasswordTxt";
-            this.PasswordTxt.Size = new System.Drawing.Size(244, 20);
-            this.PasswordTxt.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Client ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Redirect Uri";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Resource Uri";
+            this.PowerBIDataSetsTxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.PowerBIDataSetsTxt.Location = new System.Drawing.Point(133, 124);
+            this.PowerBIDataSetsTxt.Name = "PowerBIDataSetsTxt";
+            this.PowerBIDataSetsTxt.Size = new System.Drawing.Size(244, 20);
+            this.PowerBIDataSetsTxt.TabIndex = 8;
             // 
             // label4
             // 
@@ -168,40 +176,32 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "OAuth2 Authority Uri";
             // 
-            // PowerBIDataSetsTxt
+            // label3
             // 
-            this.PowerBIDataSetsTxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.PowerBIDataSetsTxt.Location = new System.Drawing.Point(133, 124);
-            this.PowerBIDataSetsTxt.Name = "PowerBIDataSetsTxt";
-            this.PowerBIDataSetsTxt.Size = new System.Drawing.Size(244, 20);
-            this.PowerBIDataSetsTxt.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Resource Uri";
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 131);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Power BI DataSets";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Redirect Uri";
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Username";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Password";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Client ID";
             // 
             // CancelBtn
             // 
@@ -244,7 +244,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "PowerBIConnectionManagerUIForm";
-            this.Text = "PowerBIConnectionManagerUIForm";
+            this.Text = "Power BI Connection Manager";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

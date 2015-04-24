@@ -118,27 +118,32 @@
       <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.14.201151115\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.Dts.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.SqlServer.Dts.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Dts.Design.dll</HintPath>
+      <HintPath>RefFiles\2012\Microsoft.SqlServer.Dts.Design.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.DTSPipelineWrap.dll</HintPath>
+      <HintPath>RefFiles\2012\Microsoft.SqlServer.DTSPipelineWrap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.SQLServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
+    <Reference Include="Microsoft.SQLServer.DTSRuntimeWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SQLServer.DTSRuntimeWrap.dll</HintPath>
+      <HintPath>RefFiles\2012\Microsoft.SQLServer.DTSRuntimeWrap.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SQLServer.ManagedDTS.dll</HintPath>
+      <HintPath>RefFiles\2012\Microsoft.SQLServer.ManagedDTS.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.PipelineHost.dll</HintPath>
+      <HintPath>RefFiles\2012\Microsoft.SqlServer.PipelineHost.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -159,7 +164,7 @@
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="JSONBuilder.cs" />
     <Compile Include="PipelineProcessException.cs" />
-    <Compile Include="SharePointListDestination.cs" />
+    <Compile Include="PowerBIDestination.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -188,15 +193,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RefFiles\2012\Microsoft.SqlServer.Dts.Design.dll" />
+    <Content Include="RefFiles\2012\Microsoft.SqlServer.DTSPipelineWrap.dll" />
+    <Content Include="RefFiles\2012\Microsoft.SQLServer.DTSRuntimeWrap.dll" />
+    <Content Include="RefFiles\2012\Microsoft.SQLServer.ManagedDTS.dll" />
+    <Content Include="RefFiles\2012\Microsoft.SqlServer.PipelineHost.dll" />
+    <Content Include="RefFiles\2014\Microsoft.SqlServer.Dts.Design.dll" />
+    <Content Include="RefFiles\2014\Microsoft.SqlServer.DTSPipelineWrap.dll" />
+    <Content Include="RefFiles\2014\Microsoft.SQLServer.DTSRuntimeWrap.dll" />
+    <Content Include="RefFiles\2014\Microsoft.SQLServer.ManagedDTS.dll" />
+    <Content Include="RefFiles\2014\Microsoft.SqlServer.PipelineHost.dll" />
     <Content Include="RefFiles\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
     <Content Include="RefFiles\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PowerBIConnectionManager\PowerBIConnectionManager.csproj">
-      <Project>{149c1402-dddb-4f84-a41b-54d771382ab6}</Project>
-      <Name>PowerBIConnectionManager</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

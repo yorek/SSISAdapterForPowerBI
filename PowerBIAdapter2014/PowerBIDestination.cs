@@ -26,9 +26,8 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
         IconResource = "Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline.Icons.PowerBIDestination.ico",
         Description = "Add data to Power BI",
         ComponentType = ComponentType.DestinationAdapter)]
-    public class SharePointListDestination : PipelineComponent
+    public class PowerBIDestination : PipelineComponent
     {
-        private PowerBIConnectionManager.PowerBIConnectionManager powerBIConnManager;
 
         private string ClientID;
         private string RedirectUri;
@@ -46,6 +45,7 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
         private const string C_DATASET = "Data Set";
         private const string C_DATATABLE = "Table";
         private const string C_USERFIFO = "Use basic FIFO";
+        private const string C_REMOVERECORDS = "Remove records on insert";
 
 
         private Dictionary<string, int> _bufferLookup;
@@ -91,9 +91,14 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
             var UseFIFO = ComponentMetaData.CustomPropertyCollection.New();
             UseFIFO.Name = C_USERFIFO;
             UseFIFO.Value = Enums.TrueFalseValue.False;
-            UseFIFO.Description = "When loading items, should subfolders within the list also be loaded. Set to 'true' to load child folders.";
+            UseFIFO.Description = "Clear old record after 200.000 limit.";
             UseFIFO.TypeConverter = typeof(Enums.TrueFalseValue).AssemblyQualifiedName;
 
+            var REMOVERECORDS = ComponentMetaData.CustomPropertyCollection.New();
+            REMOVERECORDS.Name = C_REMOVERECORDS;
+            REMOVERECORDS.Value = Enums.TrueFalseValue.False;
+            REMOVERECORDS.Description = "Set to True will clean the table before insert.";
+            REMOVERECORDS.TypeConverter = typeof(Enums.TrueFalseValue).AssemblyQualifiedName;
 
 
 
@@ -126,28 +131,21 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
                 ConnectionManager connectionManager = Microsoft.SqlServer.Dts.Runtime.DtsConvert.GetWrapper(
                   ComponentMetaData.RuntimeConnectionCollection[0].ConnectionManager);
 
-                this.powerBIConnManager = connectionManager.InnerObject as PowerBIConnectionManager.PowerBIConnectionManager;
+                Dictionary<string,string> connProperties = (Dictionary<string,string>)connectionManager.AcquireConnection(null);
 
-                if (this.powerBIConnManager == null)
-                    throw new Exception("Couldn't get the Power BI connection manager, ");
+                this.ClientID = connProperties["ClientID"];
+                this.PowerBIDataSets = connProperties["PowerBIDataSets"];
+                this.RedirectUri = connProperties["RedirectUri"];
+                this.ResourceUri = connProperties["ResourceUri"];
+                this.OAuth2AuthorityUri = connProperties["OAuth2AuthorityUri"];
+                this.PowerBIDataSets = connProperties["PowerBIDataSets"];
+                this.UserName = connProperties["UserName"];
+                this.Password = connProperties["Password"];
 
-
-
-                this.ClientID = this.powerBIConnManager.ClientID;
-                this.PowerBIDataSets = this.powerBIConnManager.PowerBIDataSets;
-                this.RedirectUri = this.powerBIConnManager.RedirectUri;
-                this.ResourceUri = this.powerBIConnManager.ResourceUri;
-                this.OAuth2AuthorityUri = this.powerBIConnManager.OAuth2AuthorityUri;
-                this.PowerBIDataSets = this.powerBIConnManager.PowerBIDataSets;
-                this.UserName = this.powerBIConnManager.UserName;
-                this.Password = this.powerBIConnManager.Password;
-
-
-
-
-
-
-
+            }
+            else
+            {
+                throw new Exception("Couldn't get the Power BI connection manager, ");
             }
         }
 
@@ -427,18 +425,6 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
                                          DataType = col.DataType
                                      }).ToDictionary(a => a.Name, a => a.DataType);
 
-
-            
-            /*
-            var input = ComponentMetaData.InputCollection[0];
-
-            var cols = new int[input.InputColumnCollection.Count];
-
-            for (int x = 0; x < input.InputColumnCollection.Count; x++)
-            {
-                cols[x] = BufferManager.FindColumnByLineageID(input.Buffer, input.InputColumnCollection[x].LineageID);
-            }
-            */
         }
 
         /// <summary>
@@ -562,6 +548,11 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
 
                 bool fireAgain = false;
 
+
+                Enums.TrueFalseValue removeRecords = (Enums.TrueFalseValue)ComponentMetaData.CustomPropertyCollection[C_REMOVERECORDS].Value;
+                if (removeRecords == Enums.TrueFalseValue.True)
+                ClearRows();
+
   
                 if (dataQueue.Count() > 0)
                 {
@@ -573,65 +564,7 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
                     CreateDataset(dataQueue);
                     AddClassRows(dataQueue);
 
-
-
-
-
                     timer.Stop();
-
-
-                    /*
-                    var errorRows = from result in resultData.Descendants("errorCode")
-                                    select result.Parent;
-
-                    int successRowsWritten = resultData.Elements().Count() - errorRows.Count();
-                    string infoMsg = string.Format(CultureInfo.InvariantCulture,
-                        "Affected {0} records in list '{1}' at '{2}'. Elapsed time is {3}ms",
-                        successRowsWritten,
-                        sharepointList,
-                        sharepointUrl,
-                        timer.ElapsedMilliseconds);
-                    ComponentMetaData.FireInformation(0, ComponentMetaData.Name, infoMsg, "", 0, ref fireAgain);
-                    ComponentMetaData.IncrementPipelinePerfCounter(
-                        DTS_PIPELINE_CTR_ROWSWRITTEN, (uint)successRowsWritten);
-
-                    // Shovel any error rows to the error flow
-                    bool cancel;
-                    int errorIter = 0;
-                    foreach (var row in errorRows)
-                    {
-                        // Do not flood the error log.
-                        errorIter++;
-                        if (errorIter > 10)
-                        {
-                            ComponentMetaData.FireError(0,
-                                ComponentMetaData.Name,
-                                "Total of " + errorRows.Count().ToString(_culture) + ", only  showing first 10.", "", 0, out cancel);
-                            return;
-
-                        }
-
-                        string idString = "";
-                        XAttribute attrib = row.Element("row").Attribute("ID");
-                        if (attrib != null)
-                            idString = "(SP ID=" + attrib.Value + ")";
-
-                        string errorString = string.Format(CultureInfo.InvariantCulture,
-                            "Error on row {0}: {1} - {2} {3}",
-                            row.Attribute("ID"),
-                            row.Element("errorCode").Value,
-                            row.Element("errorDescription").Value,
-                            idString);
-
-                        ComponentMetaData.FireError(0, ComponentMetaData.Name, errorString, "", 0, out cancel);
-
-                        // Need to throw an exception, or else this step's box is green (should be red), even though the flow
-                        // is marked as failure regardless.
-                        throw new PipelineProcessException("Errors detected in this component - see SSIS Errors");
-                    }
-
-
-                    */
                 }
                 else
                 {
@@ -681,6 +614,25 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIAdaptersOnline
             }
         }
 
+        private void ClearRows()
+        {
+            //Get dataset id from a table name
+            string datasetId = GetAllDatasets().Datasets((string)ComponentMetaData.CustomPropertyCollection[C_DATASET].Value).First()["id"].ToString();
+
+            //In a production application, use more specific exception handling. 
+            try
+            {
+                //Create a DELETE web request
+                HttpWebRequest request = DatasetRequest(String.Format("{0}/{1}/tables/{2}/rows", this.PowerBIDataSets, datasetId, (string)ComponentMetaData.CustomPropertyCollection[C_DATATABLE].Value), "DELETE", AccessToken());
+                request.ContentLength = 0;
+
+                Console.WriteLine(GetResponse(request));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
         private string createRows(List<Dictionary<string, FieldValue>> data)
         {

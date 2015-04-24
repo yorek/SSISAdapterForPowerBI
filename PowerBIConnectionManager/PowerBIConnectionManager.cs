@@ -71,11 +71,24 @@ namespace Microsoft.Samples.SqlServer.SSIS.PowerBIConnectionManager
 
         public override object AcquireConnection(object txn)
         {
-            return this;
+            Dictionary<string, string> connObj = new Dictionary<string, string>();
+
+            connObj.Add("ClientID", this.ClientID);
+            connObj.Add("RedirectUri", this.RedirectUri);
+            connObj.Add("ResourceUri", this.ResourceUri);
+            connObj.Add("OAuth2AuthorityUri", this.OAuth2AuthorityUri);
+            connObj.Add("PowerBIDataSets", this.PowerBIDataSets);
+            connObj.Add("UserName", this.UserName);
+            connObj.Add("Password", this.Password);
+
+            return connObj;
+
         }
 
         public override void ReleaseConnection(object connection)
         {
+            base.ReleaseConnection(connection);
+            connection = null;
         }
 
 
