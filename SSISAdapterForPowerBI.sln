@@ -16,36 +16,6 @@ EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup2012_x64", "Setup2012_x64\Setup2012_x64.isproj", "{6082086D-F917-41EB-BD51-86178DC8DBC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", "{E55C0163-7B2C-4FC1-BE26-02D0F6C35B85}"
-	ProjectSection(SolutionItems) = preProject
-		Installers\SSISPBAdapter_2012_x64.exe = Installers\SSISPBAdapter_2012_x64.exe
-		Installers\SSISPBAdapter_2012_x86.exe = Installers\SSISPBAdapter_2012_x86.exe
-	EndProjectSection
-EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "SSISPBAdapter_2014_x86", "Installers\SSISPBAdapter_2014_x86.exe", "{A62F689B-D9C7-4313-8322-699A6414DDF1}"
-	ProjectSection(DebuggerProjectSystem) = preProject
-		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\Installers\SSISPBAdapter_2014_x86.exe
-		RemoteMachine = MIS123
-		StartingDirectory = C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\Installers
-		Environment = Default
-		LaunchingEngine = 00000000-0000-0000-0000-000000000000
-		UseLegacyDebugEngines = No
-		LaunchSQLEngine = No
-		AttachLaunchAction = No
-	EndProjectSection
-EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "SSISPBAdapter_2014_x64", "Installers\SSISPBAdapter_2014_x64.exe", "{AD23B567-B4BC-49B3-915F-10A48927A66D}"
-	ProjectSection(DebuggerProjectSystem) = preProject
-		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\Installers\SSISPBAdapter_2014_x64.exe
-		RemoteMachine = MIS123
-		StartingDirectory = C:\Users\nicksav\Documents\Visual Studio 2013\Projects\SSISAdapterForPowerBI\Installers
-		Environment = Default
-		LaunchingEngine = 00000000-0000-0000-0000-000000000000
-		UseLegacyDebugEngines = No
-		LaunchSQLEngine = No
-		AttachLaunchAction = No
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -311,52 +281,8 @@ Global
 		{6082086D-F917-41EB-BD51-86178DC8DBC3}.SingleImage|x64.Build.0 = SingleImage
 		{6082086D-F917-41EB-BD51-86178DC8DBC3}.SingleImage|x86.ActiveCfg = SingleImage
 		{6082086D-F917-41EB-BD51-86178DC8DBC3}.SingleImage|x86.Build.0 = SingleImage
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.CD_ROM|Any CPU.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.CD_ROM|Mixed Platforms.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.CD_ROM|x64.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.CD_ROM|x86.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Debug|x64.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Debug|x86.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.DVD-5|Any CPU.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.DVD-5|Mixed Platforms.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.DVD-5|x64.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.DVD-5|x86.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Release|Any CPU.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Release|Mixed Platforms.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Release|x64.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.Release|x86.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.SingleImage|Any CPU.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.SingleImage|Mixed Platforms.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.SingleImage|x64.ActiveCfg = Debug|x86
-		{A62F689B-D9C7-4313-8322-699A6414DDF1}.SingleImage|x86.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.CD_ROM|Any CPU.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.CD_ROM|Mixed Platforms.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.CD_ROM|x64.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.CD_ROM|x86.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Debug|x64.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Debug|x86.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.DVD-5|Any CPU.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.DVD-5|Mixed Platforms.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.DVD-5|x64.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.DVD-5|x86.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Release|Any CPU.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Release|Mixed Platforms.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Release|x64.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.Release|x86.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.SingleImage|Any CPU.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.SingleImage|Mixed Platforms.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.SingleImage|x64.ActiveCfg = Debug|x86
-		{AD23B567-B4BC-49B3-915F-10A48927A66D}.SingleImage|x86.ActiveCfg = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A62F689B-D9C7-4313-8322-699A6414DDF1} = {E55C0163-7B2C-4FC1-BE26-02D0F6C35B85}
-		{AD23B567-B4BC-49B3-915F-10A48927A66D} = {E55C0163-7B2C-4FC1-BE26-02D0F6C35B85}
 	EndGlobalSection
 EndGlobal
