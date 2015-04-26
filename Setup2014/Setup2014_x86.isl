@@ -348,9 +348,9 @@
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{79BD554B-C8D0-477D-96BC-25788B649005}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td>{37ABDA6B-AB05-42DF-8FE6-8379AC1B6F41}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>microsoft.identitymodel.clie1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td>{70675220-7A16-4A75-8901-54B654C6AFBC}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>microsoft.identitymodel.clie</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIAdaptersOnline.dll</td><td>{CBE36E70-0527-47C0-BB41-F760715E299D}</td><td>PIPELINECOMPONENTS</td><td>2</td><td/><td>powerbiadaptersonline.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIAdaptersOnline.dll</td><td>{F77FAE2C-615F-46F6-8620-A7C1EDD141A4}</td><td>PIPELINECOMPONENTS</td><td>2</td><td/><td>powerbiadaptersonline.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PowerBIAdaptersOnline.dll1</td><td>{A571F781-1E60-4C38-BD40-145F78E58674}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiadaptersonline.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerBIConnectionManager.dll</td><td>{F57E43AA-4EE0-455F-AF99-7F286CC54728}</td><td>CONNECTIONS</td><td>2</td><td/><td>powerbiconnectionmanager.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerBIConnectionManager.dll</td><td>{C46B8D1A-2AB3-4503-ABC1-59756384A204}</td><td>CONNECTIONS</td><td>2</td><td/><td>powerbiconnectionmanager.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PowerBIConnectionManager.dll1</td><td>{2CCC8FA6-6BA7-4486-AD74-782614E8B811}</td><td>GlobalAssemblyCache</td><td>2</td><td/><td>powerbiconnectionmanager.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
@@ -2066,9 +2066,9 @@
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_09E34B52_4304_40C2_880B_07A6245CCA55_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</td><td/><td/><td>_F1E51D78_B750_44A4_A7AC_9EA8158C2D45_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Microsoft.IdentityModel.Clients.ActiveDirectory.dll</td><td/><td/><td>_61562BEE_32AA_451A_8844_5E9BB27E0DE8_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIAdaptersOnline.dll</td><td/><td/><td>_E48A90DE_8EB1_4C1D_A199_5217B9EB0EF9_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIAdaptersOnline.dll</td><td/><td/><td>_CBDBE534_3DF0_4E62_B5D6_EF49DE013FD8_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PowerBIAdaptersOnline.dll1</td><td/><td/><td>_45D3930E_40B0_40E9_9B83_07DE786A6012_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerBIConnectionManager.dll</td><td/><td/><td>_D40EE806_4C90_4CAF_BCAA_4951AC0C4811_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerBIConnectionManager.dll</td><td/><td/><td>_926170BA_8264_4DD2_BD5F_97BEF025AD92_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PowerBIConnectionManager.dll1</td><td/><td/><td>_BEAFF72E_4F52_4468_88AC_57A8D8E19D55_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
@@ -2691,7 +2691,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1172110706</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-769414130</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1977361482</td></row>
@@ -3794,8 +3794,8 @@
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1977414730</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>-1977412682</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td/><td>0</td><td/><td>-1977406538</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>http://www.IOISolutions.com</td><td>0</td><td/><td>-1172110706</td></row>
-		<row><td>ID_STRING4</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-1172110706</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>http://www.IOISolutions.com</td><td>0</td><td/><td>-769414130</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>IOI Solutions</td><td>0</td><td/><td>-769414130</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1977414730</td></row>
 	</table>
 

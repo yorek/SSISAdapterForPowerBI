@@ -82,7 +82,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -102,7 +102,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -120,29 +120,29 @@
     </Reference>
     <Reference Include="Microsoft.SqlServer.Dts.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>RefFiles\2012\Microsoft.SqlServer.Dts.Design.dll</HintPath>
+      <HintPath>RefFiles\2014\Microsoft.SqlServer.Dts.Design.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>RefFiles\2012\Microsoft.SqlServer.DTSPipelineWrap.dll</HintPath>
+      <HintPath>RefFiles\2014\Microsoft.SqlServer.DTSPipelineWrap.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.SQLServer.DTSRuntimeWrap, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>RefFiles\2012\Microsoft.SQLServer.DTSRuntimeWrap.dll</HintPath>
+      <HintPath>RefFiles\2014\Microsoft.SQLServer.DTSRuntimeWrap.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>RefFiles\2012\Microsoft.SQLServer.ManagedDTS.dll</HintPath>
+      <HintPath>RefFiles\2014\Microsoft.SQLServer.ManagedDTS.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.SqlServer.PipelineHost, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>RefFiles\2012\Microsoft.SqlServer.PipelineHost.dll</HintPath>
+      <HintPath>RefFiles\2014\Microsoft.SqlServer.PipelineHost.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
