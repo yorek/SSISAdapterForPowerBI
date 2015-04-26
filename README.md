@@ -14,5 +14,5 @@ How to use this adapter, please refer to the blog post here:
 http://ioi.solutions/ssis-adapter-for-power-bi-rest-api/
 
 
-#Update 26/04/2015
-  * Added new Parameter to clean rows in table before insert.
+##Update 26/04/2015
+  * Added new Parameter to clean rows in a table before insert.
