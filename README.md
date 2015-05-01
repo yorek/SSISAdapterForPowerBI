@@ -8,6 +8,34 @@ For now, the api is very limited. It only allows you to:
   2. Insert new records into tables.
   3. Remove all records from Tables.
   
+##Type mappings
+DT_STR
+DT_WSTR
+DT_NTEXT
+DT_GUID
+	string
+
+DT_R4
+DT_CY
+DT_R8
+	double
+
+DT_UI1
+DT_I1
+DT_BOOL
+	Boolean
+
+DT_UI2
+DT_I2
+DT_UI4
+DT_I4
+DT_UI8
+DT_I8
+	Int64
+
+DT_DBTIMESTAMP
+DT_DATE
+	Datetime
 
   
 How to use this adapter, please refer to the blog post here:
